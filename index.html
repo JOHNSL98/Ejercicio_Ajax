@@ -3,20 +3,15 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Ejemplo JSON EXTERNAL</title>
+        <title>Animales - Jquery - Ajax</title>
+        <link rel="stylesheet" href="css/bootstrap.css" />
     </head>
     <body>
-            <form id="formulario" action="recibir.php" method="post">
-                    <input type="text" placeholder="Escribe tu nombre" name="nombre" required autofocus title="Ingresa tu nombre porfavor">
-                    <input type="number" placeholder="Ingresa tu edad" name="edad" required title="Ingresa tu edad porfavor">
-                    <br><br>
-                    <input type="submit" id="btnEnviar" name="btnEnviar" value="Enviar formulario">
-            </form>
-                <hr>
-                <p class="respuesta">
-            
-                <p>
-                <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
-                <script src="js/prueba.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/animales.js"></script>
+        <p>Escribe el animal a visualizar - <input type=text id="animal"></input>
+		 - <button>Obtener imagenes!</button></p>
+        <div id="datos"></div>
+		<div id="images"></div>  
     </body>
 </html>
